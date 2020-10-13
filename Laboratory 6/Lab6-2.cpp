@@ -9,12 +9,12 @@ int main() {
 	cin >> A >> B >> C;
 
 	int temp;
-	temp = A;
-	A = B;
-	B = C;
-	C = temp;
+	temp = C;
+	C = B;
+	B = A;
+	A = temp;
 
-	cout << "Новые значения переменых A-B B-C C-A: \n" << A << ' ' << B << ' ' << C << endl;
+	cout << "Новые значения переменных A-B B-C C-A: \n" << A << ' ' << B << ' ' << C << endl;
 
 	return 0;
 }
