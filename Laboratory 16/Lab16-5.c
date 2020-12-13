@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <locale.h>
-#include <math.h>
 #include <malloc.h>
 
 int main() {
@@ -25,7 +24,11 @@ int main() {
         k = i;
     }
     for (int i = 0; i < N; i += 2) {
-        printf("%d ", A[k - 1 - i]);
+        if (N%2 == 0) {
+            printf("%d ", A[k - 1 - i]);
+        } else {
+            printf("%d ", A[k + 1 - i]);
+        }
     }
 
     free(A);
